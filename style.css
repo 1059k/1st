@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  background: #f6f3ec;
+  color: #2f2a24;
+  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+
+main {
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(80, 65, 45, 0.08);
+}
+
+#memoInput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d8d0c3;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #5f8f73;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.list-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.memo-box {
+  min-height: 240px;
+  padding: 18px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(80, 65, 45, 0.08);
+}
+
+.memo-box h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #faf8f3;
+  border-radius: 10px;
+}
+
+li span {
+  flex: 1;
+  word-break: break-word;
+}
+
+.button-area {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.delete-button {
+  background: #b86b5b;
+}
+
+.return-button {
+  background: #7489a6;
+}
+
+@media (max-width: 700px) {
+  .input-area,
+  .list-area {
+    display: block;
+  }
+
+  #memoInput {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .input-area button {
+    margin-top: 8px;
+  }
+
+  .memo-box {
+    margin-bottom: 16px;
+  }
+}
