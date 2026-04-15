@@ -31,7 +31,7 @@ function showMemos() {
     buttonArea.className = "button-area";
 
     const deleteButton = document.createElement("button");
-    deleteButton.textContent = "削除";
+    deleteButton.textContent = "Delete";
     deleteButton.className = "delete-button";
 
     deleteButton.addEventListener("click", function () {
@@ -44,7 +44,7 @@ function showMemos() {
 
     if (memos[i].done === false) {
       const doneButton = document.createElement("button");
-      doneButton.textContent = "達成";
+      doneButton.textContent = "Done";
       doneButton.className = "done-button";
 
       doneButton.addEventListener("click", function () {
@@ -59,7 +59,7 @@ function showMemos() {
       memoList.appendChild(li);
     } else {
       const returnButton = document.createElement("button");
-      returnButton.textContent = "戻す";
+      returnButton.textContent = "Undo";
       returnButton.className = "return-button";
 
       returnButton.addEventListener("click", function () {
@@ -109,4 +109,4 @@ input.addEventListener("keydown", function (event) {
 
 showMemos();
 
-console.log("メモが追加されました");
+console.log("Memo app loaded");
